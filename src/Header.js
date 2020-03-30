@@ -11,9 +11,12 @@ import React from "react";
 // );
 
 export function Header(props) {
+  summator();
   return (
     <div className="HeaderDiv">
       Hello summ({props.name}) + {props.age} + 'nice'
     </div>
   );
 }
+
+const summator = (a, b) => {};
