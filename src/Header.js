@@ -13,7 +13,7 @@ import React from "react";
 export function Header(props) {
   return (
     <div className="HeaderDiv">
-      Hello summ({props.name}) + {props.age}
+      Hello summ({props.name}) + {props.age} + 'nice'
     </div>
   );
 }
