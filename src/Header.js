@@ -1,22 +1,4 @@
 import React from "react";
-
-// const summ = age => {
-//   let older = age + 22;
-//   return older;
-// };
-// export const Header = props => (
-//   <div className="HeaderDiv">
-//     Hello summ({props.name}) + {props.age}
-//   </div>
-// );
-
 export function Header(props) {
-  summator();
-  return (
-    <div className="HeaderDiv">
-      Hello summ({props.name}) + {props.age} + 'nice'
-    </div>
-  );
+  return <div className="HeaderDiv">Task manager</div>;
 }
-
-const summator = (a, b) => {};
