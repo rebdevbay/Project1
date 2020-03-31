@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Header } from "./Header";
+import { Header } from "./Components/Header";
 
 class App extends Component {
   state = {
@@ -18,14 +18,8 @@ class App extends Component {
     const { name, lastName, age } = this.state;
     return (
       <div className="App-header">
-        <Header />
-        <div>
-          Hi, {name} {lastName} - your old is {age}
-        </div>
+        <Header age={age} name={name} lastName={lastName} />
         how old are you?
-        <button className="App-link" onClick={this.handleClick}>
-          Pluss age
-        </button>
       </div>
     );
   }
