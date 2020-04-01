@@ -10,16 +10,20 @@ class App extends Component {
   };
   handleClick = () => {
     this.setState(({ age }) => ({
-      age: ++age
+      age: ++age  
     }));
   };
 
   render() {
+   console.log (
+     typeof this.handleClick
+   )
     const { name, lastName, age } = this.state;
     return (
       <div className="App-header">
-        <Header age={age} name={name} lastName={lastName} />
+      <Header age={age} name={name} lastName={lastName} />
         how old are you?
+        <button onClick= {this.handleClick} />
       </div>
     );
   }
